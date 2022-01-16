@@ -24,6 +24,57 @@
       </h1>
       <hr />
       <!--Add your form below:-->
+      <form action="story.html" method="get"></form>
+      <label for="animal-1">Animal:</label>
+      <input type="text" name="animal-1" id="animal-1" required />
+      <br />
+      <label for="animal-2">Another animal:</label>
+      <input type="text" name="animal-2" id="animal-2" required />
+      <br />
+      <label for="animal-3">One more animal:</label>
+      <input type="text" name="animal-3" id="animal-3" required />
+      <br />
+      <label for="adj-1">Adjective (past tense):</label>
+      <input type="text" name="adj-1" id="adj-1" required />
+      <br />
+      <label for="verb-1">Verb (ends in -ing):</label>
+      <input type="text" name="verb-1" id="verb-1" required />
+      <br />
+      <label for="number-1">Number:</label>
+      <input type="number" name="number-1" id="number-1" required />
+      <br />
+      <span>Yes or No:</span>
+      <input type="radio" name="answer" id="yes" value="yes" required />
+      <input type="radio" name="answer" id="no" value="no" required />
+      <label for="answer"></label>
+      <br />
+      <label for="speed">Relative speed (ends in -er):</label>
+      <select name="speed" id="speed" required>
+        <option value="faster">Faster</option>
+        <option value="normal">Normal</option>
+        <option value="slower">Slower</option>
+      </select>
+      <br />
+      <label for="quote"></label>
+      <input
+        type="text"
+        name="quote"
+        id="quote"
+        required
+        list="quote-choices"
+      />
+      <datalist id="quote-choices">
+        <option value="winner gets ice cream!"></option>
+        <option value="That which does not kill us makes us stronger."></option>
+        <option
+          value="We must not allow other people’s limited perceptions to define us."
+        ></option>
+      </datalist>
+      <br />
+      <label for="message">Meaningful Message:</label>
+      <textarea name="message" id="message" cols="40" rows="8"></textarea>
+      <br>
+      <input type="submit" value="Form My Story" />
     </section>
   </body>
 </html>
